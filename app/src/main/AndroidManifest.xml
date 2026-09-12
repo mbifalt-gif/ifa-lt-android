@@ -3,7 +3,9 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ifa_icon"\n        android:roundIcon="@drawable/ifa_icon"\n        android:label="IFA LT"
+        android:icon="@drawable/ifa_icon"
+        android:roundIcon="@drawable/ifa_icon"
+        android:label="IFA LT"
         android:usesCleartextTraffic="false"
         android:theme="@style/AppTheme">
         <activity
