@@ -24,6 +24,10 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: "8.9"
+      - name: Prepare IFA LT V5 icon
+        run: |
+          mkdir -p app/src/main/res/drawable
+          base64 -d app/ifa_icon.png.b64 > app/src/main/res/drawable/ifa_icon.png
       - name: Build debug APK
         run: gradle assembleDebug
       - name: Upload APK
